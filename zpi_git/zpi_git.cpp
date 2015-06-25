@@ -23,10 +23,14 @@ class LProduct
 public:
 	int run()
 	{
-		int i = 1;
-		return i;
+		return print();
 	}
-	int print();
+	int print()
+	{
+		cout << loop() << endl;
+		cin.get();
+		return 1;
+	}
 	uint64_t multiply(int i, uint64_t product)
 	{
 		for (int j = i; j < i + Size; j++) {
@@ -60,6 +64,9 @@ public:
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	LProduct *product = new LProduct();
+	product->run();
+	delete product;
 	return 0;
 }
 
