@@ -20,5 +20,12 @@ namespace UnitTest1
 			LProduct test;
 			Assert::AreEqual(5000940, (int)test.multiply(0, 1));
 		}
+
+		TEST_METHOD(checkValue)
+		{
+			LProduct test;
+			Assert::AreEqual(951, (int)test.checkValue(951, 132));
+			Assert::AreEqual(556, (int)test.checkValue(551, 556));
+		}
 	};
 }
