@@ -14,5 +14,11 @@ namespace UnitTest1
 			LProduct test;
 			Assert::AreEqual(1, test.run());
 		}
+
+		TEST_METHOD(multiply)
+		{
+			LProduct test;
+			Assert::AreEqual(5000940, (int)test.multiply(0, 1));
+		}
 	};
 }
