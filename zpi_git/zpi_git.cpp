@@ -40,9 +40,18 @@ public:
 			largestProduct = product;
 		return largestProduct;
 	}
-	uint64_t loop();
+	uint64_t loop()
+	{
+		for (int i = 0; i < Number.length() - Size + 1; i++)
+		{
+			uint64_t product = 1;
+			product = multiply(i, product);
+			largestProduct = checkValue(largestProduct, product);
+		}
+		return largestProduct;
+	}
 	///////////////////////////////////////////////////////////////
-	LProduct(){};
+	LProduct():largestProduct(0){};
 	~LProduct(){};
 	///////////////////////////////////////////////////////////////
 	int Size = 13;
