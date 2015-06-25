@@ -20,14 +20,18 @@ using namespace std;
 class LProduct
 {
 public:
-	int run();
+	int run()
+	{
+		int i = 1;
+		return i;
+	}
 	int print();
 	uint64_t multiply(int i, uint64_t product);
 	uint64_t checkValue(uint64_t largestProduct, uint64_t product);
 	uint64_t loop();
 	///////////////////////////////////////////////////////////////
-	LProduct();
-	~LProduct();
+	LProduct(){};
+	~LProduct(){};
 	///////////////////////////////////////////////////////////////
 	const string Number;
 	int Size = 13;
