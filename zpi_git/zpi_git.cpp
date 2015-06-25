@@ -34,7 +34,12 @@ public:
 		}
 		return product;
 	}
-	uint64_t checkValue(uint64_t largestProduct, uint64_t product);
+	uint64_t checkValue(uint64_t largestProduct, uint64_t product)
+	{
+		if (product > largestProduct)
+			largestProduct = product;
+		return largestProduct;
+	}
 	uint64_t loop();
 	///////////////////////////////////////////////////////////////
 	LProduct(){};
