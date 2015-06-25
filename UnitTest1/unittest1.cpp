@@ -27,5 +27,11 @@ namespace UnitTest1
 			Assert::AreEqual(951, (int)test.checkValue(951, 132));
 			Assert::AreEqual(556, (int)test.checkValue(551, 556));
 		}
+
+		TEST_METHOD(loop)
+		{
+			LProduct test;
+			Assert::AreEqual((uint64_t)23514624000, test.loop());
+		}
 	};
 }
