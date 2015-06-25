@@ -1,5 +1,14 @@
-// zpi_git.cpp : Defines the entry point for the console application.
-//
+//Project tested used basic Microsoft library from VisualStudio2013 -> CppUnitTestFramework
+//Library in file CppUnitTest.h
+//more info on official Microsoft page
+
+/*
+Convention:
+- Methods are clear and easy to understand - comments are not necesarry
+- Methods are private due to the fact that we have one class
+- Fields and methods name start with small letter, if name consists of two words, second word starts with large letter
+- Methods are short
+*/
 
 #include "stdafx.h"
 
