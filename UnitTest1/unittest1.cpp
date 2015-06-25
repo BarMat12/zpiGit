@@ -11,6 +11,8 @@ namespace UnitTest1
 	public:
 		TEST_METHOD(run)
 		{
+			LargestProduct test;
+			Assert::AreEqual(1, test.run());
 		}
 	};
 }
