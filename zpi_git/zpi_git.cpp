@@ -31,6 +31,23 @@ public:
 		cin.get();
 		return 1;
 	}
+
+	/*
+	# Public: Function is multipling product of 13 number from string Number
+	#
+	# i - Actual position in checking Number string
+	# product - product of 13 number
+	#
+	# Examples
+	#
+	#   multiply(0, 1)
+	#	# => value of product 13 numbers in Number string count from 0 position
+	#
+	#	multiplyNumbers(5, 1)
+	#	# => value of product 13 numbers in Number string count from 10 position
+	#
+	# Returns the actual product of 13 number
+	*/
 	uint64_t multiply(int i, uint64_t product)
 	{
 		for (int j = i; j < i + Size; j++) {
@@ -38,6 +55,20 @@ public:
 		}
 		return product;
 	}
+
+	/*
+	# Public: Function is checking witch of two number is greater
+	#
+	# largestProduct - Actual or previous greatest number
+	# product - product of 13 number, waiting to be check with largestProduct
+	#
+	# Examples
+	#
+	#   checkValue(951, 132)
+	#   # => 951
+	#
+	# Returns the actual largestProduct
+	*/
 	uint64_t checkValue(uint64_t largestProduct, uint64_t product)
 	{
 		if (product > largestProduct)
